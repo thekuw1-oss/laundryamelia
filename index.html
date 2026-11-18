@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry AM - Bersih & Wangi 🌸</title>
+  
+  <!-- Font Cantik & Ramah: Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================== -->
+  <!-- 1. HALAMAN SELAMAT DATANG (WELCOME HERO STAGE - SUPER MENARIK) -->
+  <!-- ============================================================== -->
+  <section id="welcomeScreen" class="welcome-screen">
+    
+    <!-- Partikel Gelembung & Bunga Melayang di Latar Belakang -->
+    <div class="floating-bubbles-bg" id="floatingBubblesBg">
+      <span class="bubble-particle" style="--d: 0s; --x: 8%; --s: 32px;">🫧</span>
+      <span class="bubble-particle" style="--d: 2.2s; --x: 22%; --s: 40px;">🫧</span>
+      <span class="bubble-particle" style="--d: 1s; --x: 38%; --s: 26px;">🌸</span>
+      <span class="bubble-particle" style="--d: 3.5s; --x: 65%; --s: 36px;">🫧</span>
+      <span class="bubble-particle" style="--d: 1.8s; --x: 80%; --s: 28px;">✨</span>
+      <span class="bubble-particle" style="--d: 4.2s; --x: 92%; --s: 34px;">🫧</span>
+      <span class="bubble-particle" style="--d: 2.8s; --x: 50%; --s: 24px;">🌸</span>
+    </div>
+
+    <!-- Header Atas Halaman Selamat Datang -->
+    <header class="welcome-header">
+      <div class="welcome-header-container">
+        <div class="welcome-brand">
+          <div class="brand-bubble-icon">🧺</div>
+          <div>
+            <span class="welcome-brand-name">Laundry AM</span>
+            <span class="welcome-brand-sub">Bersih &bull; Wangi &bull; Ceria</span>
+          </div>
+        </div>
+
+        <div class="welcome-header-info">
+          <div class="info-pill">
+            <span class="pulsing-green-dot"></span> Buka: 07.00 - 21.00 WIB
+          </div>
+          <button id="btnHeaderStart" class="btn btn-outline-pink btn-sm">
+            Buka Dashboard <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Utama Hero Selamat Datang (Dua Kolom Menarik) -->
+    <main class="welcome-hero-main">
+      <div class="hero-container">
+        
+        <!-- KOLOM KIRI: Teks Sambutan, Keunggulan & Tombol Mulai -->
+        <div class="hero-left-content">
+          
+          <div class="tag-banner">
+            <span class="sparkle-icon">✨</span> Solusi Laundry Bersih dan Wangi No. 1 🌸
+          </div>
+
+          <h1 class="hero-main-title">
+            Selamat Datang di <br>
+            <span class="title-gradient-pink">Laundry AM</span> 🫧
+          </h1>
+
+          <p class="hero-desc">
+            Pakaian Anda dirawat dengan formula deterjen lembut, anti-bakteri, dan wangi tahan lama hingga 7 hari. Rapi, higienis, dan siap pakai setiap saat!
+          </p>
+
+          <!-- 3 Kartu Keunggulan Lucu & Menarik -->
+          <div class="hero-feature-cards">
+            <div class="feature-card">
+              <div class="feat-icon bg-pink-soft"><i class="fa-solid fa-wand-magic-sparkles text-pink"></i></div>
+              <div>
+                <strong>Harum Sakura 7 Hari</strong>
+                <p>Parfum premium tahan lama di serat pakaian</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feat-icon bg-yellow-soft"><i class="fa-solid fa-bolt text-yellow"></i></div>
+              <div>
+                <strong>Express 5 Jam Jadi</strong>
+                <p>Cucian kilat selesai di hari yang sama</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feat-icon bg-green-soft"><i class="fa-solid fa-soap text-green"></i></div>
+              <div>
+                <strong>100% Higienis & Bersih</strong>
+                <p>Bebas kuman, tungau, dan kotoran membandel</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tombol Aksi Utama -->
+          <div class="hero-cta-group">
+            <button id="btnStart" class="btn-hero-primary btn-shimmer shadow-bounce">
+              <span>Mulai ke Dashboard</span>
+              <i class="fa-solid fa-arrow-right icon-bounce"></i>
+            </button>
+            <button id="btnQuickOrder" class="btn-hero-secondary">
+              <i class="fa-solid fa-plus-circle"></i> Tambah Pesanan Baru
+            </button>
+          </div>
+
+          <!-- Social Proof & Jaminan Kepuasan -->
+          <div class="trust-badge">
+            <div class="avatar-stack">
+              <span>🌸</span>
+              <span>🧸</span>
+              <span>👗</span>
+              <span>✨</span>
+            </div>
+            <div class="trust-text">
+              <strong>⭐ 4.9/5 dari 1.200+ Pelanggan Setia</strong>
+              <small>Garansi cuci ulang jika kurang bersih atau kurang wangi</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- KOLOM KANAN: Panggung Mesin Cuci Kawaii & Interaktif -->
+        <div class="hero-right-stage">
+          
+          <div class="stage-ambient-glow"></div>
+
+          <!-- Kartu Melayang di Sekitar Mesin Cuci (Floating Mini Cards) -->
+          <div class="floating-badge badge-top-left float-anim-1">
+            <span class="badge-icon">✨</span>
+            <div>
+              <strong>100% Higienis</strong>
+              <small>Bebas Bakteri</small>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-top-right float-anim-2">
+            <span class="badge-icon">⚡</span>
+            <div>
+              <strong>5 Jam Selesai</strong>
+              <small>Layanan Kilat</small>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-right float-anim-3">
+            <span class="badge-icon">🌸</span>
+            <div>
+              <strong>Parfum Sakura</strong>
+              <small>Ekstra Harum</small>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left float-anim-4">
+            <span class="badge-icon">🏷️</span>
+            <div>
+              <strong>Mulai dari</strong>
+              <small>Rp 4.000 / kg</small>
+            </div>
+          </div>
+
+          <!-- MESIN CUCI KAWAII BESAR -->
+          <div class="kawaii-machine-wrapper" id="washingMachineWrap" title="Klik aku untuk putar cucian! 🫧">
+            <div class="kawaii-machine" id="interactiveMachine">
+              
+              <!-- Panel Atas: Wajah Kawaii Tersenyum & Display Digital -->
+              <div class="machine-head">
+                <div class="kawaii-face-cute">
+                  <span class="kawaii-eye-left"></span>
+                  <span class="kawaii-blush-left"></span>
+                  <span class="kawaii-smile-mouth">‿</span>
+                  <span class="kawaii-blush-right"></span>
+                  <span class="kawaii-eye-right"></span>
+                </div>
+                <div class="digital-display">
+                  <span class="dot-live-green"></span> AM WASH &bull; 40°C
+                </div>
+              </div>
+
+              <!-- Pintu Kaca Bulat dengan Pusaran Air & Baju Berputar -->
+              <div class="machine-drum-door">
+                <div class="drum-vortex">
+                  <div class="suds-bubble bubble-1"></div>
+                  <div class="suds-bubble bubble-2"></div>
+                  <div class="suds-bubble bubble-3"></div>
+                  <div class="suds-bubble bubble-4"></div>
+                  <i class="fa-solid fa-shirt clothes-rotating"></i>
+                </div>
+                <div class="drum-reflection"></div>
+              </div>
+
+              <!-- Tombol-tombol Panel Mesin Cuci -->
+              <div class="machine-panel-dials">
+                <span class="dial-btn dial-pink"></span>
+                <span class="dial-btn dial-white"></span>
+                <span class="dial-btn dial-blue"></span>
+                <div class="powder-tray">DETERGENT</div>
+              </div>
+
+              <!-- Kaki Penyangga Mesin Cuci -->
+              <div class="machine-feet-stands">
+                <span class="foot-stand"></span>
+                <span class="foot-stand"></span>
+              </div>
+
+            </div>
+
+            <!-- Tombol Interaktif di Bawah Mesin Cuci -->
+            <div class="machine-play-controls">
+              <span class="control-title"><i class="fa-solid fa-wand-sparkles text-pink"></i> Coba Fitur Mesin Cuci:</span>
+              <div class="play-btn-group">
+                <button class="btn-play-trigger" id="btnTriggerBubbles" title="Keluarkan busa melimpah!">
+                  🫧 Busa Sabun
+                </button>
+                <button class="btn-play-trigger" id="btnTriggerFastSpin" title="Putar mesin cuci lebih kencang!">
+                  🌀 Putar Kencang
+                </button>
+                <button class="btn-play-trigger" id="btnTriggerPerfume" title="Semprotkan parfum wangi!">
+                  🌸 Semprot Parfum
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+  </section>
+
+
+  <!-- ============================================================== -->
+  <!-- 2. HALAMAN DASHBOARD (PINK & PUTIH BERSIH)                     -->
+  <!-- ============================================================== -->
+  <div id="mainDashboard" class="main-dashboard" style="display: none;">
+    
+    <!-- Navbar Pink & Putih -->
+    <header class="app-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="brand-badge">🧺</div>
+          <div>
+            <span class="brand-name">Laundry AM</span>
+            <small class="brand-tagline">Cantik, Bersih & Harum</small>
+          </div>
+        </div>
+
+        <!-- Menu Sederhana -->
+        <nav class="nav-links">
+          <button class="nav-btn active" data-page="menu-dashboard">
+            <i class="fa-solid fa-chart-pie"></i> Dashboard
+          </button>
+          <button class="nav-btn" data-page="menu-orders">
+            <i class="fa-solid fa-list-check"></i> Data Pesanan
+          </button>
+          <button class="nav-btn" data-page="menu-customers">
+            <i class="fa-solid fa-users"></i> Data Pelanggan
+          </button>
+        </nav>
+
+        <!-- Tombol Kembali ke Halaman Selamat Datang -->
+        <button id="btnBackToWelcome" class="btn-back-home" title="Kembali ke Halaman Selamat Datang">
+          <i class="fa-solid fa-house"></i> Halaman Depan
+        </button>
+      </div>
+    </header>
+
+    <!-- Konten Dashboard -->
+    <main class="dashboard-content">
+
+      <!-- ==================== MENU 1: DASHBOARD ==================== -->
+      <section id="menu-dashboard" class="page-section active">
+        
+        <div class="page-title-box">
+          <div>
+            <h2>Dashboard Laundry AM 🌸</h2>
+            <p>Ringkasan transaksi dan status cucian pelanggan hari ini.</p>
+          </div>
+          <button class="btn btn-pink" onclick="goToMenu('menu-orders')">
+            <i class="fa-solid fa-plus-circle"></i> Tambah Pesanan Baru
+          </button>
+        </div>
+
+        <!-- Kartu Ringkasan (Pink & Putih) -->
+        <div class="stat-cards-grid">
+          
+          <!-- Jumlah Pesanan -->
+          <div class="stat-card">
+            <div class="stat-icon-wrap bg-pink-light">
+              <i class="fa-solid fa-basket-shopping text-pink"></i>
+            </div>
+            <div class="stat-detail">
+              <span class="stat-label">Jumlah Pesanan</span>
+              <h3 class="stat-number" id="dashTotalOrders">0</h3>
+            </div>
+          </div>
+
+          <!-- Pesanan Diproses -->
+          <div class="stat-card">
+            <div class="stat-icon-wrap bg-yellow-light">
+              <i class="fa-solid fa-spinner fa-spin-pulse text-yellow"></i>
+            </div>
+            <div class="stat-detail">
+              <span class="stat-label">Pesanan Diproses</span>
+              <h3 class="stat-number" id="dashProcessingOrders">0</h3>
+            </div>
+          </div>
+
+          <!-- Pesanan Selesai -->
+          <div class="stat-card">
+            <div class="stat-icon-wrap bg-green-light">
+              <i class="fa-solid fa-circle-check text-green"></i>
+            </div>
+            <div class="stat-detail">
+              <span class="stat-label">Pesanan Selesai</span>
+              <h3 class="stat-number" id="dashDoneOrders">0</h3>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tabel Pesanan Terbaru -->
+        <div class="card-white mt-4">
+          <div class="card-title-bar">
+            <h3>📋 Tabel Pesanan Terbaru</h3>
+            <button class="btn btn-outline-pink btn-sm" onclick="goToMenu('menu-orders')">
+              Lihat Semua Pesanan <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table-pink">
+              <thead>
+                <tr>
+                  <th>Nama Pelanggan</th>
+                  <th>Jenis Cucian</th>
+                  <th>Berat Cucian</th>
+                  <th>Harga</th>
+                  <th>Status</th>
+                  <th class="text-center">Aksi Cepat</th>
+                </tr>
+              </thead>
+              <tbody id="dashOrdersTableBody">
+                <!-- Diisi otomatis oleh JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ==================== MENU 2: DATA PESANAN ==================== -->
+      <section id="menu-orders" class="page-section">
+        
+        <div class="page-title-box">
+          <div>
+            <h2>Data Pesanan Laundry 🧺</h2>
+            <p>Kelola dan masukkan pesanan baru dengan mudah dan cepat.</p>
+          </div>
+          <button id="btnResetDemoData" class="btn btn-outline-pink btn-sm" title="Kembalikan ke data contoh">
+            <i class="fa-solid fa-rotate-left"></i> Reset Data Contoh
+          </button>
+        </div>
+
+        <div class="orders-layout">
+          
+          <!-- Form Input Pesanan Baru -->
+          <div class="card-white form-card">
+            <h3 id="formTitleText"><i class="fa-solid fa-plus-circle text-pink"></i> Form Tambah Pesanan</h3>
+            <p class="form-desc">Isi rincian cucian pelanggan di bawah ini:</p>
+
+            <form id="orderForm">
+              <input type="hidden" id="editOrderId" value="">
+
+              <!-- Nama Pelanggan -->
+              <div class="form-group">
+                <label for="inputCustomerName">Nama Pelanggan <span class="req">*</span></label>
+                <input type="text" id="inputCustomerName" class="form-control" placeholder="Contoh: Kak Dinda" required>
+              </div>
+
+              <!-- Nomor WhatsApp / HP -->
+              <div class="form-group">
+                <label for="inputCustomerPhone">No. WhatsApp / HP <span class="req">*</span></label>
+                <input type="tel" id="inputCustomerPhone" class="form-control" placeholder="Contoh: 08123456789" inputmode="numeric" pattern="[0-9]*" required>
+              </div>
+
+              <!-- Jenis Cucian -->
+              <div class="form-group">
+                <label for="inputServiceType">Jenis Cucian <span class="req">*</span></label>
+                <select id="inputServiceType" class="form-control" required>
+                  <option value="Cuci Komplit (Wangi & Setrika)" data-rate="7000" data-unit="kg">Cuci Komplit (Wangi & Setrika) - Rp 7.000 / kg</option>
+                  <option value="Cuci Kering Lipat" data-rate="5000" data-unit="kg">Cuci Kering Lipat - Rp 5.000 / kg</option>
+                  <option value="Setrika Licin Saja" data-rate="4000" data-unit="kg">Setrika Licin Saja - Rp 4.000 / kg</option>
+                  <option value="Express Kilat (5 Jam)" data-rate="10000" data-unit="kg">Express Kilat (5 Jam) - Rp 10.000 / kg</option>
+                  <option value="Bed Cover & Selimut" data-rate="25000" data-unit="pcs">Bed Cover & Selimut - Rp 25.000 / pcs</option>
+                  <option value="Cuci Sepatu Bersih" data-rate="20000" data-unit="pasang">Cuci Sepatu Bersih - Rp 20.000 / pasang</option>
+                </select>
+              </div>
+
+              <!-- Berat Cucian -->
+              <div class="form-group">
+                <label for="inputWeight" id="labelWeight">Berat Cucian (Kg) <span class="req">*</span></label>
+                <input type="number" id="inputWeight" class="form-control" step="any" min="0.1" value="2" required>
+              </div>
+
+              <!-- Status Cucian -->
+              <div class="form-group">
+                <label for="inputStatus">Status Cucian</label>
+                <select id="inputStatus" class="form-control">
+                  <option value="Menunggu">⏳ Menunggu</option>
+                  <option value="Diproses" selected>🌀 Diproses</option>
+                  <option value="Selesai">✨ Selesai</option>
+                  <option value="Diambil">📦 Diambil</option>
+                </select>
+              </div>
+
+              <!-- Kotak Total Harga Otomatis -->
+              <div class="price-calc-box">
+                <div class="price-row">
+                  <span>Tarif:</span>
+                  <strong id="displayTariff">Rp 7.000 / kg</strong>
+                </div>
+                <div class="price-row">
+                  <span>Kuantitas:</span>
+                  <strong id="displayWeight">2 kg</strong>
+                </div>
+                <div class="price-divider"></div>
+                <div class="price-total-row">
+                  <span>Total Harga:</span>
+                  <strong class="total-pink" id="displayTotalPrice">Rp 14.000</strong>
+                </div>
+              </div>
+
+              <!-- Tombol Simpan / Batal -->
+              <div class="form-actions">
+                <button type="submit" class="btn btn-pink w-100" id="btnSaveOrder">
+                  <i class="fa-solid fa-floppy-disk"></i> Simpan Pesanan
+                </button>
+                <button type="button" class="btn btn-outline-pink" id="btnCancelEdit" style="display: none;">
+                  Batal
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Tabel Lengkap Pesanan -->
+          <div class="card-white table-card">
+            
+            <div class="table-search-bar">
+              <div class="search-input-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchOrdersInput" placeholder="Cari nama pelanggan...">
+              </div>
+
+              <select id="filterOrdersStatus" class="status-filter-select">
+                <option value="ALL">Semua Status</option>
+                <option value="Menunggu">Menunggu</option>
+                <option value="Diproses">Diproses</option>
+                <option value="Selesai">Selesai</option>
+                <option value="Diambil">Diambil</option>
+              </select>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table-pink">
+                <thead>
+                  <tr>
+                    <th>Nama Pelanggan</th>
+                    <th>Jenis Cucian</th>
+                    <th>Berat Cucian</th>
+                    <th>Harga</th>
+                    <th>Status</th>
+                    <th class="text-center">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                  <!-- Diisi otomatis oleh JavaScript -->
+                </tbody>
+              </table>
+            </div>
+
+            <div id="emptyOrdersNotice" class="empty-box" style="display: none;">
+              <p>🌸 Belum ada pesanan yang cocok dengan pencarian.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ==================== MENU 3: DATA PELANGGAN ==================== -->
+      <section id="menu-customers" class="page-section">
+        
+        <div class="page-title-box">
+          <div>
+            <h2>Data Pelanggan Setia 🌸</h2>
+            <p>Daftar pelanggan yang terdata otomatis dari riwayat pesanan.</p>
+          </div>
+          <span class="customer-badge">Total: <strong id="totalCustomerCount">0</strong> Pelanggan</span>
+        </div>
+
+        <div class="card-white">
+          <div class="table-responsive">
+            <table class="table-pink">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Pelanggan</th>
+                  <th>No. WhatsApp / HP</th>
+                  <th>Jumlah Kali Mencuci</th>
+                  <th>Total Biaya Transaksi</th>
+                  <th class="text-center">Hubungi Pelanggan</th>
+                </tr>
+              </thead>
+              <tbody id="customersTableBody">
+                <!-- Diisi otomatis oleh JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ==================== MODAL STRUK NOTA KASIR ==================== -->
+  <div id="receiptModal" class="modal-overlay">
+    <div class="receipt-paper">
+      <div class="receipt-header">
+        <h3>🌸 LAUNDRY AM 🧺</h3>
+        <p>Solusi laundry bersih dan wangi</p>
+        <div class="dot-line"></div>
+      </div>
+
+      <div class="receipt-body">
+        <div class="rcpt-row"><span>Nama:</span><strong id="rcptName">-</strong></div>
+        <div class="rcpt-row"><span>WhatsApp:</span><span id="rcptPhone">-</span></div>
+        <div class="rcpt-row"><span>Tanggal:</span><span id="rcptDate">-</span></div>
+        <div class="dot-line"></div>
+        <div class="rcpt-row"><span>Jenis Cucian:</span><strong id="rcptService">-</strong></div>
+        <div class="rcpt-row"><span>Berat Cucian:</span><span id="rcptWeight">-</span></div>
+        <div class="dot-line"></div>
+        <div class="rcpt-row rcpt-total">
+          <span>Total Harga:</span>
+          <strong class="text-pink" id="rcptTotal">Rp 0</strong>
+        </div>
+        <div class="rcpt-row"><span>Status:</span><strong id="rcptStatus">-</strong></div>
+      </div>
+
+      <div class="dot-line"></div>
+      <p class="rcpt-footer">Terima kasih atas kepercayaannya! 🥰</p>
+
+      <div class="receipt-actions">
+        <button class="btn btn-outline-pink" onclick="closeReceiptModal()"><i class="fa-solid fa-xmark"></i> Tutup</button>
+        <button class="btn btn-pink" onclick="window.print()"><i class="fa-solid fa-print"></i> Cetak</button>
+        <button class="btn btn-wa" id="btnReceiptWa"><i class="fa-brands fa-whatsapp"></i> Kirim WA</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifikasi Lucu -->
+  <div id="cuteToast" class="cute-toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
